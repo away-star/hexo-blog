@@ -5,15 +5,16 @@
 # Site
 title: xingxing的小站
 subtitle: 'What does not kill me makes me stronger'
-description: ''
-keywords:
+description: '专注于前端开发的后端工程师'
+keywords: '专注于前端开发的后端工程师'
 author: xingxing
 language: zh-CN
-timezone: ''
+timezone:
+email: 2064989403@qq.com
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://www.staraway.asia
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
