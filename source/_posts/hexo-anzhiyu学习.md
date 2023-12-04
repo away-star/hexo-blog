@@ -1,13 +1,13 @@
 ---
 title: hexo-anzhiyu学习
-date: 2023-12-01 20:12:32
+date: 2023-9-01 20:12:32
 tags: 就业
-categories: 算法
+categories: 后端
 keywords: 回溯，二刷 
 description: 回溯，二刷
-top_img: /img/suanfa.png
+top_img: /img/houduan.png
 comments: true
-cover: /img/suanfa.png
+cover: /img/houduan.png
 toc: 
 toc_number:
 toc_style_simple:
