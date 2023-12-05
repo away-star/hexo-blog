@@ -6,9 +6,9 @@ tags:
 categories: docker
 keywords: docker, 命令, 云原生
 description: docker命令二览
-top_img: /img/houduan.png
+top_img: /img/yunyuansheng.png
 comments: true
-cover: /img/houduan.png
+cover: /img/yunyuansheng.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 本篇转载自我的掘金。

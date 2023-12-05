@@ -1,7 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags: 就业
+tags: 
+  - 就业
 categories: 算法
 keywords: 回溯，二刷
 description: 回溯，二刷
