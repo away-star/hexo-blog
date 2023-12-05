@@ -1,9 +1,12 @@
 ---
 title: 回溯——排列、组合、子集
-tags: 就业
+tags:
+    - 就业
+    - 回溯
+    - 刷题
 categories: 算法
-keywords: 回溯，二刷
-description: 回溯，二刷
+keywords: 就业, 刷题，回溯
+description: 回溯章节的排列、组合、子集全刷篇
 top_img: /img/suanfa.png
 comments: true
 cover: /img/suanfa.png

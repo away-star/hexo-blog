@@ -1,9 +1,10 @@
 ---
 title: CSS之At-rules
-tags: css
+tags: 
+  - css
 categories: 前端
-keywords: css，at-rules
-description: css，at-rules
+keywords: css, at-rules
+description: css中at-rules的使用
 top_img: /img/qianduan.png
 comments: true
 cover: /img/qianduan.png

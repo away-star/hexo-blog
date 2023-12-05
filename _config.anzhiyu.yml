@@ -30,10 +30,10 @@ nav:
       item:
         - name: 个人博客
           link: https://www.staraway.asia
-          icon: /img/favicon.ico
+          icon: /img/touxiang.png
         - name: Github
           link: https://github.com/away-star
-          icon: /img/favicon.ico
+          icon: /img/touxiang.png
     - title: 项目
       item:
         - name: 安知鱼图床
@@ -510,14 +510,14 @@ footer:
       #     - title: 版权协议
       #       link: /copyright/
   footerBar:
-    enable: true
+    enable: false
     authorLink: /
     cc:
       enable: false
       link: /copyright
     linkList:
-      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-        text: 主题
+#      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+#        text: 主题
       # - link: https://image.anheyu.com
       #   text: 图床
       # - link: https://beian.miit.gov.cn/
@@ -803,7 +803,7 @@ aside:
     enable: true
     content: 欢迎来看我的博客鸭~
   card_weixin:
-    enable: true
+    enable: false
     face: https://bu.dusays.com/2023/01/13/63c02edf44033.png
     backFace: https://bu.dusays.com/2023/05/13/645fa415e8694.png
   card_recent_post:

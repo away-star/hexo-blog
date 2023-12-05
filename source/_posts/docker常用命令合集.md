@@ -1,9 +1,11 @@
 ---
 title: docker常用命令合集
-tags: docker
+tags: 
+  - docker
+  - 云原生
 categories: docker
-keywords: docker，命令
-description: docker，命令
+keywords: docker, 命令, 云原生
+description: docker命令二览
 top_img: /img/houduan.png
 comments: true
 cover: /img/houduan.png

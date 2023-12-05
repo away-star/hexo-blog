@@ -1,9 +1,11 @@
 ---
 title: umi-max的简易数据流方案
-tags: umi
+tags: 
+   - umi
+   - react
 categories: 前端
 keywords: umi，数据流
-description: umi，数据流
+description: umi数据流方案记录
 top_img: /img/qianduan.png
 comments: true
 cover: /img/qianduan.png
