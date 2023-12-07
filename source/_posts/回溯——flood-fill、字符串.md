@@ -13,7 +13,7 @@ cover: /img/suanfa.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 可转载哦
-date: 2023-12-04 16:52:14
+date: 2023-10-04 16:52:14
 ---
 
 
@@ -86,7 +86,7 @@ backTrack(nums, res, temp, 0, length, unused);
 ```
 - 完整代码
 
-```java
+```JAVA
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
         int len = nums.length;

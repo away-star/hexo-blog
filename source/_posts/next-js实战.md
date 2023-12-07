@@ -12,7 +12,7 @@ cover: /img/qianduan.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 本文章转载自我的掘金
-date: 2023-12-05 10:38:54
+date: 2023-8-11 10:38:54
 ---
 
 
@@ -57,7 +57,7 @@ date: 2023-12-05 10:38:54
 
 - next.js初探----页面跳转link
 
-```
+```typescript
 import Link from 'next/link'
 
 <Link href="/test">
@@ -66,13 +66,13 @@ import Link from 'next/link'
  </Link>
 ```
 - next.js初探----页面跳转router
-```
+```typescript
 import Router from 'next/router'
 <button onClick={()=>{Router.push('/test')}}>去test页面</button>
 ```
 
 - next.js初探----接收页面跳转传入参数
-```
+```typescript
 
 import { withRouter } from 'next/router'
 import Link from 'next/link'
@@ -93,7 +93,7 @@ export default withRouter(Test)
 
 - next.js初探----路由钩子
 
-```
+```typescript
 // 监听
 Router.events.on('routeChangeStart', handleRouteChange)
 // 关闭
@@ -127,7 +127,7 @@ Router.events.on('hashChangeComplete,(...args)=>{
 #### next.js核心---getServerSideProps（老师推荐）
 
 在初始渲染时就拿到数据，需要在页面组件处导出名为getServerSideProps的async函数，如果不需要接口数据做seo，也可以在页面加载后使用ajax请求
-```
+```typescript
 import { useRouter } from 'next/router'
 
 export async function getServerSideProps(context) {

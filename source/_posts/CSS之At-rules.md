@@ -11,7 +11,7 @@ cover: /img/qianduan.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 本篇转载自我的掘金。
-date: 2023-12-04 16:52:42
+date: 2023-2-04 16:52:42
 ---
 
 
@@ -65,7 +65,7 @@ date: 2023-12-04 16:52:42
 ``animation: 动画执行时间 执行关键帧名称;``
 
 ##### 简单应用
-```
+```css
 div { 
 	width: 200px;
 	height: 200px;
@@ -87,7 +87,7 @@ div:hover {
 ##### 注意事项
 `@keyframes的原理是把元素样式从一个状态慢慢的变为另外一个状态，所以是要能够进行渐变的样式才可以使用`
 以下是不能生效的
-```
+```css
 div {
     animation: appear 2s;
 }
@@ -124,7 +124,7 @@ div {
 
 ##### 媒体特征（常用）
 - 判断设备是横屏还是竖屏
-```
+```css
 /* 横屏 */ 
 @media (orientation: landscape) {} 
 /* 竖屏 */ 
@@ -132,7 +132,7 @@ div {
 
 ```
 - 匹配设备的最大高度、最大宽度
-```
+```css
 /* 如果高度小于600px */ 
 @media (max-height: 600px) {}
 /* 如果高度小于480px */ 
@@ -145,7 +145,7 @@ div {
 
 ```
 - 判断深色模式
-```
+```css
 
 /* 深色模式 表示系统更倾向于深色模式*/
 @media (prefers-color-scheme: dark) {
@@ -166,7 +166,7 @@ div {
 > 用于导入其他样式文件
 
 - 可以混用条件判断媒体查询
-```
+``` css
 /* 宽度小于1000px才会生效 */
 @import "./reset.css" screen and (max-width: 1000px); 
 

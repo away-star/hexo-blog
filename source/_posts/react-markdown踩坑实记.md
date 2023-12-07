@@ -12,14 +12,14 @@ cover: /img/suanfa.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 可转载哦
-date: 2023-12-05 14:15:39
+date: 2023-8-12 14:15:39
 ---
 
 
 ### 前往react-markdown的github官网参照使用
 
 首先安装react-markdown插件
-```
+```bash
 yarn add react-markdown
 ```
 
@@ -35,7 +35,7 @@ yarn add react-markdown
 
 - 经过一番操作后发现无解，只能把`react-syntax-highlighter/dist/esm/styles/prism`删除，然后去掉style样式，代码如下
 
-```
+```typescript
 // index.jsx
 
 import React from 'react'
@@ -104,7 +104,7 @@ export default MarkdownDisplay
 
 - 此时页面可以正常显示，无任何报错，但是在`git commit`到本地仓库的时候会出现`ESlint检查`错误
 
-```
+```bash
 117:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Use `<Image />` from `next/image` instead to utilize Image Optimization. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
 ./components/MarkdownDisplay/index.tsx
 Error: Unexpected unlimited 'eslint-disable-line' comment. Specify some rule names to disable.  eslint-comments/no-unlimited-disable
@@ -121,7 +121,7 @@ husky - pre-commit hook exited with code 1 (error)
 ### 前往react-markdown的github官网参照使用
 
 首先安装react-markdown插件
-```
+```bash
 yarn add markdown-navbar # or `npm i markdown-navbar --save`
 ```
 
@@ -129,7 +129,7 @@ yarn add markdown-navbar # or `npm i markdown-navbar --save`
 
 代码如下
 
-```
+```typescript
 //index.tsx
 
 
@@ -161,7 +161,7 @@ export default MarkdownNav
 ```
 
 如果你想让它变的更好看一点可以手动再加一些css样式（通过f12得知他的每个标题均为div元素）
-```
+```less
 //css
 
 .markdownNav {

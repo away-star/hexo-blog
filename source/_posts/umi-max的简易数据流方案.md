@@ -12,7 +12,7 @@ cover: /img/qianduan.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 可转载哦
-date: 2023-12-04 16:53:01
+date: 2023-6-04 16:53:01
 ---
 
 > 相信很多react初学者都有一段刻骨铭心的数据流学习经历，不用多说，从redux到mobx再到dva，真的很痛苦，全局数据流作为react开发中必不可少的一环，当然是越简单越好，所以，model诞生了，作为umi Max的内置全局数据流方案，他是我目前见过最简易的，相信也是公认最简易的
@@ -29,7 +29,7 @@ date: 2023-12-04 16:53:01
 ![2](../images/umi-max的简易数据流方案-1701680109557.png)
 
 `此处恰恰体现了model这种全局数据流方案最最最令人震惊的一点-------他就是自定义一个hooks，没有其他任何所谓的“黑魔法”`
-```
+```typescript
 // src/models/userModel.ts
 export default () => {
 const user = { username: 'umi', 
@@ -40,7 +40,7 @@ return { user };
 ```
 
 `注意此处一定要写成函数式写法，不要形成dva惯性，写成下面这样（不要问我怎么知道的，我被折磨几天）`
-```
+```typescript
 export default {
     namespace: 'write',
 ```
@@ -52,7 +52,7 @@ umi官网也给了很足的提示
 - Model中是允许使用其他hooks的，这就意味着你直接把塔当成一个没有return的函数组件，随便写函数
 
 官网告诉你可以这样用
-```
+```typescript
 // src/models/counterModel.ts
 import { useState, useCallback } from 'react';
 
@@ -67,7 +67,7 @@ export default () => {
 ```
 
 我告诉你不仅可以定义hook，还可以这样用
-```
+```typescript
 export default () => {
   const [name, setName] = useState<string>(DEFAULT_NAME);
 
@@ -84,12 +84,12 @@ export default () => {
 `是不是感觉瞬间明朗起来`
 3. 使用model
    `其实就一行简单代码，你函数return了什么，就可以用什么`
-```
+```typescript
 const { user, loading } = useModel('userModel');
 ```
 
 4.一点性能优化
-```
+```javascript
 // src/components/CounterActions/index.tsx
 import { useModel } from 'umi';
 

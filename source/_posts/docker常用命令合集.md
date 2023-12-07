@@ -12,7 +12,7 @@ cover: /img/yunyuansheng.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 本篇转载自我的掘金。
-date: 2023-12-04 16:37:24
+date: 2023-5-04 16:37:24
 ---
 
 ## 镜像相关
@@ -28,31 +28,31 @@ docker search xnamex
 
 ![1](../images/docker常用命令合集-1701679683733.png)
 - 下拉镜像
-```
+```bash
 docker pull xnamex
 docker pull xnamex:tag
 ```
 - 删除镜像
-```
+``` bash
 docker rmi -f xnamex/xidx
 ```
 - 保存镜像（压缩为tar文件，可以随意取出）
-```
+``` bash
 docker save xname/xidx -o 保存位置
 ```
 - 加载镜像（配合前面的保存镜像）
-```
+``` bash
 docker load -i 镜像tar包保存位置
 ```
 ### 容器相关
 
 - 查看容器列表
-```
+``` bash
 docker ps
 ```
 - 创建容器
 
-```
+``` bash
 docker run -it -d --name 运行的容器的别名 -p 宿主机端口：容器端口 -v 宿主机文件存储位置：容器内文件位置 镜像名：tag /bin/bash
 ```
 `参数含义`:
@@ -64,11 +64,11 @@ docker run -it -d --name 运行的容器的别名 -p 宿主机端口：容器端
 
 - 停止容器
 
-```
+``` bash
 docker stop xname/xidx
 ```
 - 删除容器
-```
+``` bash
 # 删除一个容器
 docker rm -f xnamex/xidx
 # 删除多个容器 空格隔开要删除的容器名或者容器id
@@ -78,21 +78,21 @@ docker rm -f $(docker ps -aq)
 ```
 - 进入容器(只能进入正在运行的容器)
 
-```
+``` bash
 docker attach xnamex/xidx
 ```
 ### 数据卷相关
 - 创建数据卷
-```
+```bash
 docker volume create xnamex
 ```
 - 查看所有数据卷
 
-```
+``` bash
 docker volume ls
 ```
 - 查看数据卷的所有信息（包含关联的宿主机目录位置）
-```
+``` bash
 docker volume inspect xnamex
 ```
 
@@ -100,12 +100,12 @@ docker volume inspect xnamex
 
 - 删除数据卷
 
-``` 
+``` bash
 docker volume rm xnamex
-```
+``` 
 - 删除所有未使用过的数据卷
 
-```
+```bash
 docker volume prune
 ```
 
@@ -123,7 +123,7 @@ sudo yum remove docker \
 ```
 
 2. 安装仓库
-```
+```bash
 sudo yum install -y yum-utils
 
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
@@ -131,14 +131,14 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 
 3. 安装docker engine
 
-```
+```bash
 sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
 4. 配置国内镜像仓库地址：
 
 新建`/etc/docker/daemon.json`文件，输入如下内容：
-```
+```bash
 {
   "registry-mirrors": [
     "https://registry.docker-cn.com",
@@ -150,7 +150,7 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 5. 然后重启，配置开机启动
 
-```
+```bash
 sudo systemctl restart docker
 sudo systemctl enable docker
 sudo systemctl enable containerd

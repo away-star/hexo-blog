@@ -12,7 +12,7 @@ cover: /img/qianduan.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 可转载哦
-date: 2023-12-05 14:15:54
+date: 2023-6-22 14:15:54
 ---
 
 
@@ -25,7 +25,7 @@ date: 2023-12-05 14:15:54
 
     -   当执行了`reslove`函数，会回调promise对象的.then函数
     -   当执行了`reject`函数，会回调promise对象的.catche函数
-```
+```javascript
 new Promise((resolve, reject) => {
    //写入axios请求
   console.log(`executor 立即执行`)
@@ -33,7 +33,7 @@ new Promise((resolve, reject) => {
 ```
 如下代码为经典例
 
-```
+```javascript
 function requestData(url) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -58,7 +58,7 @@ requestData('iceweb.org').catch(e => console.log(e))
 
 ### promise中catch的使用
 在catch后仍可以调用then方法，因为catch返回的也是一个promise对象，且此时的promise中是resolve
-```
+```javascript
 const promise = new Promise((resolve, reject) => {
   reject('ice error')
 })
@@ -69,7 +69,8 @@ promise.catch(err => ({name:'ice', age: 22})).then(res => console.log(res))
 ```
 ### promise中finally的使用
 -   finally，无论promise状态是fulfilled还是rejected都会执行一次`finally`方法
-```const promise = new Promise((resolve, reject) => {
+```javascript
+const promise = new Promise((resolve, reject) => {
   resolve('hi ice')
 })
 
@@ -82,7 +83,7 @@ promise.then(res => console.log(res)).finally(() => console.log('finally execute
 ## promise回调地狱
 1. 当我发送网络请求的时候，需要拿到这次网络请求的数据，再发送网络请求，就这样重复三次，才能拿到我最终的结果。导致如下结果(`很不优雅！！！`)
 
-```
+```javascript
 function requestData(url) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -134,7 +135,7 @@ requestData('iceweb.io').then(res => {
 2.采用`async+await`解决回调地域现象
 
 `await特点`——只有await后面的方法成功执行才会执行下面的代码！
-```
+```javascript
 function requestData(url) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -165,7 +166,7 @@ getData()
 umi框架封装的请求可以在全局配置文件`src/app.ts`中对request进行配置
 
 对于使用可以使用useRequest具体使用api
-```
+```javascript
 import type { RequestConfig } from 'umi';
 
 export const request: RequestConfig = {
@@ -183,7 +184,7 @@ export const request: RequestConfig = {
 ```
 也可以通过request直接使用api
 
-```
+```javascript
 export default () => {
   const { data, error, loading } = useRequest(() => {
     return services.getUserList('/api/test');

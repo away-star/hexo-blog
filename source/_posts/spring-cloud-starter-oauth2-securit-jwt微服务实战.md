@@ -13,7 +13,7 @@ cover: /img/houduan.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 可转载哦
-date: 2023-12-05 14:15:17
+date: 2023-8-14 14:15:17
 ---
 
 
@@ -37,7 +37,7 @@ date: 2023-12-05 14:15:17
 
 #### 相关依赖引入
 - spring-cloud-starter-oauth2+security是一套完整的用户登录授权系统，在认证服务上主要有三个依赖：`spring-cloud-starter-security、spring-cloud-starter-oauth2、spring-security-jwt`
-```
+``` xml
 
         <!--spring security相关依赖-->
         <dependency>
@@ -58,7 +58,7 @@ date: 2023-12-05 14:15:17
 ```
 - 在其他需要权限访问的服务上主要包含两个依赖：
 
-```
+``` xml
   <!--spring security相关依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -79,7 +79,7 @@ date: 2023-12-05 14:15:17
 ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/64fdb305f8934f128f141085735d9945~tplv-k3u1fbpfcp-watermark.image?)
 
 - WebSecurityConfig主要做springsecurity相关的配置
-```
+```Java
 @EnableWebSecurity //开启security服务
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true) //允许在方法上加的注解来配置权限
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -122,7 +122,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 ```
 - TokenConfig在认证服务中主要作token的生成配置
 
-```
+```JAVA
 @Configuration
 public class TokenConfig {
 
@@ -171,7 +171,7 @@ public class TokenConfig {
 
 - AuthorizationServer主要是授权方面也就是spring-cloud-starter-oauth2相关的配置
 
-```
+```Java
 @Configuration
 @EnableAuthorizationServer
 @Slf4j
@@ -227,7 +227,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 ```
 - DaoAuthenticationProviderCustom是一个很重要的配置，通过这个修改的springsecuritu原先提供的登录方案（账号密码登录），但当前环境肯定涉及到多种登录方式，我们通过重写`additionalAuthenticationChecks和setUserDetailsService`方法来自定义登录方式
 
-```
+```JAVA
 @Slf4j
 @Component
 public class DaoAuthenticationProviderCustom extends DaoAuthenticationProvider {
@@ -265,7 +265,7 @@ public class DaoAuthenticationProviderCustom extends DaoAuthenticationProvider {
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27ad3d5c189a4243beae77449c746b46~tplv-k3u1fbpfcp-watermark.image?)
 - TokenConfig(和认证服务的类似，但不需要token生成)
 
-```
+```JAVA
 @Configuration
 public class TokenConfig {
 
@@ -291,7 +291,7 @@ public class TokenConfig {
 ```
 
 - ResouceServerConfig（资源权限的相关配置）
-```
+```JAVA
 @Configuration
 @EnableResourceServer
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)

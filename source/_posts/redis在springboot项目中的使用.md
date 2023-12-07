@@ -12,7 +12,7 @@ cover: /img/suanfa.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 本文章转载自我的掘金
-date: 2023-12-05 10:38:38
+date: 2023-8-13 10:38:38
 ---
 
 
@@ -45,7 +45,7 @@ date: 2023-12-05 10:38:38
 ```
 
 ### 增加配置类，提供序列化方式
-```
+```Java
 /**
  * @author star
  */
@@ -171,7 +171,7 @@ public class RedisConfig {
 
 - map类型-------opsForHash
 
-```
+```JAVA
     //新增map值，key为键  field+value是map
     public void put(String key, Object field, Object value) {
         redisTemplate.opsForHash().put(key, field, value);
@@ -211,7 +211,7 @@ public class RedisConfig {
 
 - list类型-------opsForList
 
-```
+``` java
     //把值添加在list的前面，可以是单个值也可以多个值（也可以是List<Object> value类型）
     //注意此处的left就是从前面插入，right就是插入到末尾
     public Long leftPush(String key, Object... values) {
@@ -239,7 +239,7 @@ public class RedisConfig {
 
 - set类型-------opsForSet
 
-```
+``` java
     //添加元素到 set中
     public Long add(String key, Collection<Object> values) {
         return redisTemplate.opsForSet().add(key, values);
@@ -285,8 +285,8 @@ public class RedisConfig {
 ```
 
 - set类型-------opsForZSet(相比于set为元素增加了score，默认安装score从小到大排序)
-
-```
+    
+``` java
     //添加元素到 zset，从小到大排序
     public Boolean add(String key, Object value, double score) {
         return redisTemplate.opsForZSet().add(key, value, score);

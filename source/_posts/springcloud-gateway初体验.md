@@ -13,14 +13,14 @@ cover: /img/suanfa.png
 copyright_author: xingxing
 copyright_author_href: www.staraway.asia
 copyright_info: 可转载哦
-date: 2023-12-05 14:15:31
+date: 2023-8-15 14:15:31
 ---
 
 
 
 ### 在springcloud alibaba中集成gateway
 ##### 新建maven项目service-gateway并在pom文件中导入springcloud gateway依赖
-```pom
+```XML
       <!--gateway⽹关-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -28,7 +28,7 @@ date: 2023-12-05 14:15:31
         </dependency>
 ```
 ##### 加入nacos服务发现依赖和nacos服务注册中心适配
-```
+```xml
   <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
@@ -36,7 +36,7 @@ date: 2023-12-05 14:15:31
 
 ```
 #### 在bootstrap.yml配置文件中进行相关配置
-```
+```yaml
 server:
   port: 9000
 spring:
@@ -60,7 +60,7 @@ spring:
 ![1](../images/springcloud-gateway初体验-1701757439810.png)
 
 #### 书写测试接口controller
-```
+```JAVA
 package com.example.servicecontent.controller;
 
 import lombok.extern.slf4j.Slf4j;
