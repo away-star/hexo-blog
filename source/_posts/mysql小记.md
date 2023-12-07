@@ -3,7 +3,6 @@ title: mysql小记
 tags: 
   - mysql 
   - 面试 
-  - 就业
 categories: 后端
 keywords: mysql, 面试, 就业, 后端
 description: mysql二次复习
