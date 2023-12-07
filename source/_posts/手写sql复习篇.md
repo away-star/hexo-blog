@@ -2,7 +2,7 @@
 title: 手写sql复习篇
 tags:
   - sql
-  - 就业
+  - 面试
 categories: 算法
 keywords: sql,就业
 description: sql复习篇
