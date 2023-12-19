@@ -1,0 +1,556 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>百姓网面试 | xingxing的小站</title><meta name="keywords" content="缓存"><meta name="author" content="xingxing,2064989403@qq.com"><meta name="copyright" content="xingxing"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="百姓网面试"><meta name="application-name" content="百姓网面试"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="百姓网面试"><meta property="og:url" content="http://www.staraway.asia/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/index.html"><meta property="og:site_name" content="xingxing的小站"><meta property="og:description" content="缓存"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="http://www.staraway.asia/img/jiuye.jpg"><meta property="article:author" content="xingxing"><meta property="article:tag" content="专注于前端开发的后端工程师"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="http://www.staraway.asia/img/jiuye.jpg"><meta name="description" content="缓存"><link rel="shortcut icon" href="/img/touxiang.png"><link rel="canonical" href="http://www.staraway.asia/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"},
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: {"mode":"api","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🏃 脚踏实地行动派","🧱 团队小组发动机","💢 壮汉人狠话不多"]},
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":true,"limitCount":50,"languages":{"author":"作者: xingxing","link":"链接: ","source":"来源: xingxing的小站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'xingxing的小站',
+  title: '百姓网面试',
+  postAI: '',
+  pageFillDescription: 'sql优化, 最左前缀原则, 为什么最左前缀原则可以优化sql（索引扫描）, 索引失效的场景, 如何保证缓存和数据库的一致性, 缓存和数据库的操作均会成功的前提, 缓存和数据库的操作均不保证成功, 主从库延迟和延迟双删问题, 读写分离、主从集群做性能优化, 水平分表、垂直分表要怎么分, 扑克牌缺一张迅速找到缺的是哪张（每个牌编号相加实际值相减得到丢失的）, 实际项目中的sql优化, 是否做过性能测试, Mysql怎么实现可重复读（MVCC undo log版本链）, mysql怎么解决幻读, 是否了解过间隙锁, jdk17和jdk8的区别, 说说synchronize（锁升级机制）, 说说jvm内存模型, CMS的阶段（和G1的区别）, CMS过程, G1过程, G1优势, 空间整合：  - 由于G1使用了独立区域（Region）概念G1从整体来看是基于标记-整理算法实现收集从局部（两个Region）上来看是基于复制算法实现的但无论如何这两种算法都意味着G1运作期间不会产生内存空间碎片。, GO相比于java的优势, go-zero框架关于缓存穿透的解决方案, 四次挥手的过程, 最后一次挥手有一个time-wait为什么, 说一说tcp的滑动窗口, tcp的流量控制, tcp的拥塞控制算法, 有序数组原地删除重复的元素最多剩下两个, chatgpt怎么看优化最左前缀原则为什么最左前缀原则可以优化索引扫描索引失效的场景如何保证缓存和数据库的一致性缓存和数据库的操作均会成功的前提先更新数据库后删除缓存依旧是个线程并发读写数据缓存中不存在数据库线程读取数据库得到旧值线程更新数据库线程删除缓存线程将旧值写入缓存最终的值在缓存中是旧值在数据库中是新值也发生不一致这种情况理论来说是可能发生的但实际真的有可能发生吗其实概率很低这是因为它必须满足个条件缓存刚好已失效读请求写请求并发更新数据库删除缓存的时间步骤要比读数据库写缓存时间短步骤和仔细想一下条件发生的概率其实是非常低的因为写数据库一般会先加锁所以写数据库通常是要比读数据库的时间更长的这么来看先更新数据库再删除缓存的方案是可以保证数据一致性的所以我们应该采用这种方案来操作数据库和缓存缓存和数据库的操作均不保证成功无论是更新缓存还是删除缓存只要第二步发生失败那么就会导致数据库和缓存不一致想要保证数据库和缓存一致性推荐采用先更新数据库再删除缓存方案并配合消息队列或订阅变更日志的方式来做主从库延迟和延迟双删问题第一个问题还记得前面讲到的先删除缓存再更新数据库导致不一致的场景么这里我再把例子拿过来让你复习一下个线程要并发读写数据可能会发生以下场景线程要更新原值线程先删除缓存线程读缓存发现不存在从数据库中读取到旧值线程将新值写入数据库线程将旧值写入缓存最终的值在缓存中是旧值在数据库中是新值发生不一致第二个问题是关于读写分离主从复制延迟情况下缓存和数据库一致性的问题如果使用先更新数据库再删除缓存方案其实也发生不一致线程更新主库原值线程删除缓存线程查询缓存没有命中查询从库得到旧值从库从库同步完成主从库线程将旧值写入缓存最终的值在缓存中是旧值在主从库中是新值也发生不一致看到了么这个问题的核心在于缓存都被回种了旧值那怎么解决这类问题呢最有效的办法就是把缓存删掉但是不能立即删而是需要延迟删这就是业界给出的方案缓存延迟双删策略按照延时双删策略这个问题的解决方案是这样的解决第一个问题在线程删除缓存更新完数据库之后先休眠一会再删除一次缓存解决第二个问题线程可以生成一条延时消息写到消息队列中消费者延时删除缓存这两个方案的目的都是为了把缓存清掉这样一来下次就可以从数据库读取到最新值写入缓存写在最后想让缓存和数据库强一致很难缓存是用来提升性能的多用来保证中的而数据库是用来保证中的的所以我们应该根据业务场景来选择使用缓存还是数据库做到强一致还是得用悲观锁方案读写分离主从集群做性能优化水平分表垂直分表要怎么分扑克牌缺一张迅速找到缺的是哪张每个牌编号相加实际值相减得到丢失的实际项目中的优化是否做过性能测试怎么实现可重复读版本链怎么解决幻读针对快照读普通语句是通过方式解决了幻读因为可重复读隔离级别下事务执行过程中看到的数据一直跟这个事务启动时看到的数据是一致的即使中途有其他事务插入了一条数据是查询不出来这条数据的所以就很好了避免幻读问题针对当前读等语句是通过记录锁间隙锁方式解决了幻读因为当执行语句的时候会加上如果有其他事务在锁范围内一般是当前查询的范围插入了一条记录那么这个插入语句就会被阻塞无法成功插入所以就很好了避免幻读问题是否了解过间隙锁和的区别表达式新增的库没有库没有垃圾回收器使用记录时间使用垃圾回收器新的集合操作改进的语句新的使用第三方库说说锁升级机制偏向锁一个线程拿锁直接给轻量级锁多个线程拿用自璇重量级锁悲观锁说说内存模型的阶段和的区别过程初始标记独占需要仅标记能直接关联的对象速度很快并发标记可以和用户线程并行执行无需标记所有可达对象重新标记独占为了修正并发标记期间因用户程序继续运作而导致标记产生变动的那一部分对象的标记记录这个阶段的停顿时间一般会比初始标记阶段稍长一些但远比并发标记的时间要短并发清理可以和用户线程并行执行清理垃圾过程初始标记独占需要仅标记能直接关联的对象速度很快并发标记可以和用户线程并行执行无需标记所有可达对象最终标记独占为了修正并发标记期间因用户程序继续运作而导致标记产生变动的那一部分对象的标记记录这个阶段的停顿时间一般会比初始标记阶段稍长一些但远比并发标记的时间要短筛选回收独占根据时间来进行回收优先回收价值最大的区域优势空间整合由于使用了独立区域概念从整体来看是基于标记整理算法实现收集从局部两个上来看是基于复制算法实现的但无论如何这两种算法都意味着运作期间不会产生内存空间碎片无法处理浮动垃圾在最后一步并发清理过程中用户线程执行也会产生垃圾但是这部分垃圾是在标记之后所以只有等到下一次的时候清理掉这部分垃圾叫浮动垃圾因为我边执行清除过程应用也边产生垃圾这时需要设置一个百分比来确保程序的可执行避免运行时预留的内存无法满足程序的需要在中这个百分比为到时这个参数值提高到了那如果万一有些人说我就要把这个参数值设置那执行的时候内存满了用户的线程运行不了这时候会临时启用单线程执行会暂停所有用户的线程收集器来重新进行老年代的垃圾收集这样停顿时间就更长了相比于的优势框架关于缓存穿透的解决方案四次挥手的过程最后一次挥手有一个为什么确保最后一个确认报文能够到达如果没收到发送来的确认报文那么就会重新发送连接释放请求报文等待一段时间就是为了处理这种情况的发生避免新旧链接混淆等待可以让本连接持续时间内所产生的所有报文都从网络中消失使得下一个新的连接请求不会出现旧的连接请求报文说一说的滑动窗口概念窗口大小指的是无需等待确认应答而可以继续发送数据的最大值上图的窗口大小就是个字节四个段发送前四个段的时候不需要等待任何直接发送收到第一个后滑动窗口向后移动继续发送第五个段的数据依次类推操作系统内核为了维护这个滑动窗口需要开辟发送缓冲区来记录当前还有哪些数据没有应答只有确认应答过的数据才能从缓冲区删掉窗口越大则网络的吞吐率就越高的流量控制位窗口大小接收端将自己可以接收的缓冲区大小放入首部中的窗口大小字段通过端通知发送端窗口大小字段越大说明网络的吞吐量越高接收端一旦发现自己的缓冲区快满了就会将窗口大小设置成一个更小的值通知给发送端发送端接受到这个窗口之后就会减慢自己的发送速度如果接收端缓冲区满了就会将窗口置为这时发送方不再发送数据但是需要定期发送一个窗口探测数据段使接收端把窗口大小告诉发送端的拥塞控制算法最初执行慢开始算法大小指数增长到达慢开始门限后转而执行拥塞避免算法线性加一增长随着发送速率的增加若发生超时重传则将慢开始门限减小为当前拥塞窗口的一半再将拥塞窗口设置为然后执行慢开始拥塞避免重复若发送方收到个重复确认则表示分组丢失发送方立刻重传相应分组然后执行快恢复算法将慢开始门限和拥塞窗口重新设置为当前拥塞窗口的一半然后执行拥塞避免算法有序数组原地删除重复的元素最多剩下两个双指针好难计数怎么看',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-19 16:11:35',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://avatars.githubusercontent.com/u/106024593?v=4"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.staraway.asia" title="个人博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/touxiang.png" alt="个人博客"/><span class="back-menu-item-text">个人博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://github.com/away-star" title="Github"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/touxiang.png" alt="Github"/><span class="back-menu-item-text">Github</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">xingxing的小站</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/img/weixin.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/weixin.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/zhifubao.jpg" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/zhifubao.jpg"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/css/" style="font-size: 1.05rem;">css<sup>2</sup></a><a href="/tags/docker/" style="font-size: 1.05rem;">docker<sup>1</sup></a><a href="/tags/gateway/" style="font-size: 1.05rem;">gateway<sup>1</sup></a><a href="/tags/http/" style="font-size: 1.05rem;">http<sup>2</sup></a><a href="/tags/kafka/" style="font-size: 1.05rem;">kafka<sup>1</sup></a><a href="/tags/mysql/" style="font-size: 1.05rem;">mysql<sup>1</sup></a><a href="/tags/next-js/" style="font-size: 1.05rem;">next.js<sup>1</sup></a><a href="/tags/react/" style="font-size: 1.05rem;">react<sup>4</sup></a><a href="/tags/redis/" style="font-size: 1.05rem;">redis<sup>2</sup></a><a href="/tags/springboot/" style="font-size: 1.05rem;">springboot<sup>1</sup></a><a href="/tags/springcloud/" style="font-size: 1.05rem;">springcloud<sup>2</sup></a><a href="/tags/springsecurity/" style="font-size: 1.05rem;">springsecurity<sup>1</sup></a><a href="/tags/sql/" style="font-size: 1.05rem;">sql<sup>1</sup></a><a href="/tags/umi/" style="font-size: 1.05rem;">umi<sup>1</sup></a><a href="/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/" style="font-size: 1.05rem;">云原生<sup>1</sup></a><a href="/tags/%E5%88%B7%E9%A2%98/" style="font-size: 1.05rem;">刷题<sup>2</sup></a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.05rem;">前端<sup>2</sup></a><a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 1.05rem;">后端<sup>3</sup></a><a href="/tags/%E5%9B%9E%E6%BA%AF/" style="font-size: 1.05rem;">回溯<sup>2</sup></a><a href="/tags/%E5%B0%B1%E4%B8%9A/" style="font-size: 1.05rem;">就业<sup>8</sup></a><a href="/tags/%E7%BC%93%E5%AD%98/" style="font-size: 1.05rem;">缓存<sup>1</sup></a><a href="/tags/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" style="font-size: 1.05rem;">背包问题<sup>1</sup></a><a href="/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/" style="font-size: 1.05rem;">虚拟内存<sup>1</sup></a><a href="/tags/%E9%9D%A2%E7%BB%8F/" style="font-size: 1.05rem;">面经<sup>1</sup></a><a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 1.05rem;">面试<sup>2</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">8</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B0%B1%E4%B8%9A/" itemprop="url">就业</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%B0%B1%E4%B8%9A/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>就业</span></a><a class="article-meta__tags" href="/tags/%E7%BC%93%E5%AD%98/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>缓存</span></a></span></div></div><h1 class="post-title" itemprop="name headline">百姓网面试</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-12-18T00:22:26.000Z" title="发表于 2023-12-18 08:22:26">2023-12-18</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2023-12-19T08:11:35.940Z" title="更新于 2023-12-19 16:11:35">2023-12-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">3.3k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为昆明"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>昆明</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/jiuye.jpg"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://www.staraway.asia/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/"><header><a class="post-meta-categories" href="/categories/%E5%B0%B1%E4%B8%9A/" itemprop="url">就业</a><a href="/tags/%E5%B0%B1%E4%B8%9A/" tabindex="-1" itemprop="url">就业</a><a href="/tags/%E7%BC%93%E5%AD%98/" tabindex="-1" itemprop="url">缓存</a><h1 id="CrawlerTitle" itemprop="name headline">百姓网面试</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">xingxing</span><time itemprop="dateCreated datePublished" datetime="2023-12-18T00:22:26.000Z" title="发表于 2023-12-18 08:22:26">2023-12-18</time><time itemprop="dateCreated datePublished" datetime="2023-12-19T08:11:35.940Z" title="更新于 2023-12-19 16:11:35">2023-12-19</time></header><h4 id="sql优化"><a href="#sql优化" class="headerlink" title="sql优化"></a>sql优化</h4><h4 id="最左前缀原则"><a href="#最左前缀原则" class="headerlink" title="最左前缀原则"></a>最左前缀原则</h4><h4 id="为什么最左前缀原则可以优化sql（索引扫描）"><a href="#为什么最左前缀原则可以优化sql（索引扫描）" class="headerlink" title="为什么最左前缀原则可以优化sql（索引扫描）"></a>为什么最左前缀原则可以优化sql（索引扫描）</h4><h4 id="索引失效的场景"><a href="#索引失效的场景" class="headerlink" title="索引失效的场景"></a>索引失效的场景</h4><h4 id="如何保证缓存和数据库的一致性"><a href="#如何保证缓存和数据库的一致性" class="headerlink" title="如何保证缓存和数据库的一致性"></a>如何保证缓存和数据库的一致性</h4><h5 id="缓存和数据库的操作均会成功的前提"><a href="#缓存和数据库的操作均会成功的前提" class="headerlink" title="缓存和数据库的操作均会成功的前提"></a>缓存和数据库的操作均会成功的前提</h5><ul>
+<li>先更新数据库，后删除缓存</li>
+</ul>
+<p>依旧是 2 个线程并发「读写」数据：</p>
+<ol>
+<li>缓存中 X 不存在（数据库 X &#x3D; 1）</li>
+<li>线程 A 读取数据库，得到旧值（X &#x3D; 1）</li>
+<li>线程 B 更新数据库（X &#x3D; 2)</li>
+<li>线程 B 删除缓存</li>
+<li>线程 A 将旧值写入缓存（X &#x3D; 1）</li>
+<li>最终 X 的值在缓存中是 1（旧值），在数据库中是 2（新值），也发生不一致。</li>
+</ol>
+<p>这种情况「理论」来说是可能发生的，但实际真的有可能发生吗？</p>
+<p>其实概率「很低」，这是因为它必须满足 3 个条件：</p>
+<ol>
+<li>缓存刚好已失效</li>
+<li>读请求 + 写请求并发</li>
+<li>更新数据库 + 删除缓存的时间（步骤 3-4），要比读数据库 + 写缓存时间短（步骤 2 和 5）</li>
+<li>仔细想一下，条件 3 发生的概率其实是非常低的。</li>
+</ol>
+<p>因为写数据库一般会先「加锁」，所以写数据库，通常是要比读数据库的时间更长的。</p>
+<p>这么来看，「先更新数据库 + 再删除缓存」的方案，是可以保证数据一致性的。</p>
+<p>所以，我们应该采用这种方案，来操作数据库和缓存。</p>
+<h5 id="缓存和数据库的操作均不保证成功"><a href="#缓存和数据库的操作均不保证成功" class="headerlink" title="缓存和数据库的操作均不保证成功"></a>缓存和数据库的操作均不保证成功</h5><ul>
+<li>无论是更新缓存还是删除缓存，只要第二步发生失败，那么就会导致数据库和缓存不一致。</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/../images/%E7%99%BE%E5%A7%93%E7%BD%91-1702859564018.png" alt="1"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/../images/%E7%99%BE%E5%A7%93%E7%BD%91-1702859570812.png" alt="2"></p>
+<p><code>想要保证数据库和缓存一致性，推荐采用「先更新数据库，再删除缓存」方案，并配合「消息队列」或「订阅变更日志」的方式来做。</code></p>
+<h5 id="主从库延迟和延迟双删问题"><a href="#主从库延迟和延迟双删问题" class="headerlink" title="主从库延迟和延迟双删问题"></a>主从库延迟和延迟双删问题</h5><ul>
+<li>第一个问题，还记得前面讲到的「先删除缓存，再更新数据库」导致不一致的场景么？</li>
+</ul>
+<p>这里我再把例子拿过来让你复习一下：</p>
+<p>2 个线程要并发「读写」数据，可能会发生以下场景：</p>
+<p>线程 A 要更新 X &#x3D; 2（原值 X &#x3D; 1）<br>线程 A 先删除缓存<br>线程 B 读缓存，发现不存在，从数据库中读取到旧值（X &#x3D; 1）<br>线程 A 将新值写入数据库（X &#x3D; 2）<br>线程 B 将旧值写入缓存（X &#x3D; 1）<br>最终 X 的值在缓存中是 1（旧值），在数据库中是 2（新值），发生不一致。</p>
+<ul>
+<li>第二个问题：是关于「读写分离 + 主从复制延迟」情况下，缓存和数据库一致性的问题。</li>
+</ul>
+<p>如果使用「先更新数据库，再删除缓存」方案，其实也发生不一致：</p>
+<p>线程 A 更新主库 X &#x3D; 2（原值 X &#x3D; 1）<br>线程 A 删除缓存<br>线程 B 查询缓存，没有命中，查询「从库」得到旧值（从库 X &#x3D; 1）<br>从库「同步」完成（主从库 X &#x3D; 2）<br>线程 B 将「旧值」写入缓存（X &#x3D; 1）<br>最终 X 的值在缓存中是 1（旧值），在主从库中是 2（新值），也发生不一致。</p>
+<p>看到了么？这 2 个问题的核心在于：缓存都被回种了「旧值」。</p>
+<p>那怎么解决这类问题呢？</p>
+<p>最有效的办法就是，把缓存删掉。</p>
+<p>但是，不能立即删，而是需要「延迟删」，这就是业界给出的方案：缓存延迟双删策略。</p>
+<p>按照延时双删策略，这 2 个问题的解决方案是这样的：</p>
+<ul>
+<li><p>解决第一个问题：在线程 A 删除缓存、更新完数据库之后，先「休眠一会」，再「删除」一次缓存。</p>
+</li>
+<li><p>解决第二个问题：线程 A 可以生成一条「延时消息」，写到消息队列中，消费者延时「删除」缓存。</p>
+</li>
+</ul>
+<p>这两个方案的目的，都是为了把缓存清掉，这样一来，下次就可以从数据库读取到最新值，写入缓存。</p>
+<p><code>写在最后</code>：想让缓存和数据库「强一致」很难，缓存是用来提升性能的，多用来保证CAP中的AP，而数据库是用来保证CAP中的CP的，所以，我们应该根据业务场景，来选择使用缓存还是数据库。<br>做到「强一致」还是得用悲观锁方案。</p>
+<h4 id="读写分离、主从集群做性能优化"><a href="#读写分离、主从集群做性能优化" class="headerlink" title="读写分离、主从集群做性能优化"></a>读写分离、主从集群做性能优化</h4><h4 id="水平分表、垂直分表要怎么分"><a href="#水平分表、垂直分表要怎么分" class="headerlink" title="水平分表、垂直分表要怎么分"></a>水平分表、垂直分表要怎么分</h4><h4 id="扑克牌缺一张，迅速找到缺的是哪张（每个牌编号相加，实际值相减得到丢失的）"><a href="#扑克牌缺一张，迅速找到缺的是哪张（每个牌编号相加，实际值相减得到丢失的）" class="headerlink" title="扑克牌缺一张，迅速找到缺的是哪张（每个牌编号相加，实际值相减得到丢失的）"></a>扑克牌缺一张，迅速找到缺的是哪张（每个牌编号相加，实际值相减得到丢失的）</h4><h4 id="实际项目中的sql优化"><a href="#实际项目中的sql优化" class="headerlink" title="实际项目中的sql优化"></a>实际项目中的sql优化</h4><h4 id="是否做过性能测试"><a href="#是否做过性能测试" class="headerlink" title="是否做过性能测试"></a>是否做过性能测试</h4><h4 id="Mysql怎么实现可重复读（MVCC-undo-log版本链）"><a href="#Mysql怎么实现可重复读（MVCC-undo-log版本链）" class="headerlink" title="Mysql怎么实现可重复读（MVCC undo log版本链）"></a>Mysql怎么实现可重复读（MVCC undo log版本链）</h4><h4 id="mysql怎么解决幻读"><a href="#mysql怎么解决幻读" class="headerlink" title="mysql怎么解决幻读"></a>mysql怎么解决幻读</h4><ul>
+<li>针对快照读（普通 select 语句），是通过 MVCC<br>方式解决了幻读，因为可重复读隔离级别下，事务执行过程中看到的数据，一直跟这个事务启动时看到的数据是一致的，即使中途有其他事务插入了一条数据，是查询不出来这条数据的，所以就很好了避免幻读问题。</li>
+<li>针对当前读（select … for update 等语句），是通过 next-key lock（记录锁+间隙锁）方式解决了幻读，因为当执行 select … for<br>update 语句的时候，会加上 next-key lock，如果有其他事务在 <code>next-key lock 锁范围内(一般是当前sql查询的范围)</code><br>插入了一条记录，那么这个插入语句就会被阻塞，无法成功插入，所以就很好了避免幻读问题。</li>
+</ul>
+<h4 id="是否了解过间隙锁"><a href="#是否了解过间隙锁" class="headerlink" title="是否了解过间隙锁"></a>是否了解过间隙锁</h4><h4 id="jdk17和jdk8的区别"><a href="#jdk17和jdk8的区别" class="headerlink" title="jdk17和jdk8的区别"></a>jdk17和jdk8的区别</h4><ol>
+<li><p>Lambda表达式</p>
+</li>
+<li><p>新增的库</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// JDK8</span></span><br><span class="line"><span class="comment">// 没有Java Flight Recorder库</span></span><br><span class="line"><span class="comment">// 没有ZGC垃圾回收器</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// JDK17</span></span><br><span class="line"><span class="comment">// 使用Java Flight Recorder记录CPU时间</span></span><br><span class="line">JFR.enable();</span><br><span class="line"><span class="comment">// 使用ZGC垃圾回收器</span></span><br><span class="line">System.setProperty(<span class="string">&quot;jdk.garbageCollector&quot;</span>, <span class="string">&quot;Z&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+<li><p>新的集合操作API</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// JDK8</span></span><br><span class="line">List&lt;Integer&gt; list = Arrays.asList(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> list.stream().filter(n -&gt; n % <span class="number">2</span> == <span class="number">0</span>).mapToInt(Integer::intValue).sum();</span><br><span class="line"></span><br><span class="line"><span class="comment">// JDK17</span></span><br><span class="line">List&lt;Integer&gt; list = Arrays.asList(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">List&lt;Integer&gt; evenList = list.stream().filter(n -&gt; n % <span class="number">2</span> == <span class="number">0</span>).toList();</span><br><span class="line">Set&lt;Integer&gt; oddSet = list.stream().filter(n -&gt; n % <span class="number">2</span> != <span class="number">0</span>).toSet();</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>改进的Switch语句</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// JDK8</span></span><br><span class="line"><span class="type">String</span> <span class="variable">dayOfWeek</span> <span class="operator">=</span> <span class="string">&quot;MON&quot;</span>;</span><br><span class="line"><span class="keyword">switch</span> (dayOfWeek) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;MON&quot;</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;TUE&quot;</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;WED&quot;</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;THU&quot;</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;FRI&quot;</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;Weekday&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;SAT&quot;</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;SUN&quot;</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;Weekend&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;Invalid day&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// JDK17</span></span><br><span class="line"><span class="type">String</span> <span class="variable">dayOfWeek</span> <span class="operator">=</span> <span class="string">&quot;MON&quot;</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">dayType</span> <span class="operator">=</span> <span class="keyword">switch</span> (dayOfWeek) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;MON&quot;</span>, <span class="string">&quot;TUE&quot;</span>, <span class="string">&quot;WED&quot;</span>, <span class="string">&quot;THU&quot;</span>, <span class="string">&quot;FRI&quot;</span> -&gt; <span class="string">&quot;Weekday&quot;</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;SAT&quot;</span>, <span class="string">&quot;SUN&quot;</span> -&gt; <span class="string">&quot;Weekend&quot;</span>;</span><br><span class="line">    <span class="keyword">default</span> -&gt; &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Invalid day&quot;</span>);</span><br><span class="line">        <span class="keyword">yield</span> <span class="string">&quot;Invalid day&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新的HTTP Client API</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// JDK8</span></span><br><span class="line"><span class="comment">// 使用第三方HTTP库</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// JDK17</span></span><br><span class="line"><span class="type">HttpClient</span> <span class="variable">client</span> <span class="operator">=</span> HttpClient.newHttpClient();</span><br><span class="line"><span class="type">HttpRequest</span> <span class="variable">request</span> <span class="operator">=</span> HttpRequest.newBuilder()</span><br><span class="line">.uri(URI.create(<span class="string">&quot;https://www.example.com/&quot;</span>))</span><br><span class="line">.build();</span><br><span class="line">HttpResponse&lt;String&gt; response = client.send(request, HttpResponse.BodyHandlers.ofString());</span><br><span class="line">    System.out.println(response.body());</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="说说synchronize（锁升级机制）"><a href="#说说synchronize（锁升级机制）" class="headerlink" title="说说synchronize（锁升级机制）"></a>说说synchronize（锁升级机制）</h4><ol>
+<li>偏向锁 (一个线程拿锁，直接给)</li>
+<li>轻量级锁 （多个线程拿，用CAS自璇）</li>
+<li>重量级锁 （悲观锁）</li>
+</ol>
+<h4 id="说说jvm内存模型"><a href="#说说jvm内存模型" class="headerlink" title="说说jvm内存模型"></a>说说jvm内存模型</h4><h4 id="CMS的阶段（和G1的区别）"><a href="#CMS的阶段（和G1的区别）" class="headerlink" title="CMS的阶段（和G1的区别）"></a>CMS的阶段（和G1的区别）</h4><h5 id="CMS过程"><a href="#CMS过程" class="headerlink" title="CMS过程"></a>CMS过程</h5><ol>
+<li><p>初始标记：独占PUC，需要STW(Stop the world)，仅标记GCroots能直接关联的对象，速度很快。</p>
+</li>
+<li><p>并发标记：可以和用户线程并行执行，无需STW，标记所有可达对象</p>
+</li>
+<li><p>重新标记：独占CPU(STW)，为了修正并发标记期间因用户程序继续运作而导致标记产生变动的那一部分对象的标记记录。这个阶段的停顿时间一般会比初始标记阶段稍长一些，但远比并发标记的时间要短。</p>
+</li>
+<li><p>并发清理：可以和用户线程并行执行，清理垃圾<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/../images/%E7%99%BE%E5%A7%93%E7%BD%91-1702880543910.png" alt="8"></p>
+</li>
+</ol>
+<h5 id="G1过程"><a href="#G1过程" class="headerlink" title="G1过程"></a>G1过程</h5><ol>
+<li>初始标记：独占PUC，需要STW(Stop the world)，仅标记GCroots能直接关联的对象，速度很快。</li>
+<li>并发标记：可以和用户线程并行执行，无需STW，标记所有可达对象</li>
+<li>最终标记：独占CPU(STW)，为了修正并发标记期间因用户程序继续运作而导致标记产生变动的那一部分对象的标记记录。这个阶段的停顿时间一般会比初始标记阶段稍长一些，但远比并发标记的时间要短。</li>
+<li>筛选回收：独占CPU(STW)，根据时间来进行回收，优先回收价值最大的区域<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/../images/%E7%99%BE%E5%A7%93%E7%BD%91-1702880535273.png" alt="6"></li>
+</ol>
+<h5 id="G1优势"><a href="#G1优势" class="headerlink" title="G1优势"></a>G1优势</h5><ul>
+<li><h2 id="空间整合：-由于G1使用了独立区域（Region）概念，G1从整体来看是基于“标记-整理”算法实现收集，从局部（两个Region）上来看是基于“复制”算法实现的，但无论如何，这两种算法都意味着G1运作期间不会产生内存空间碎片。"><a href="#空间整合：-由于G1使用了独立区域（Region）概念，G1从整体来看是基于“标记-整理”算法实现收集，从局部（两个Region）上来看是基于“复制”算法实现的，但无论如何，这两种算法都意味着G1运作期间不会产生内存空间碎片。" class="headerlink" title="空间整合：  - 由于G1使用了独立区域（Region）概念，G1从整体来看是基于“标记-整理”算法实现收集，从局部（两个Region）上来看是基于“复制”算法实现的，但无论如何，这两种算法都意味着G1运作期间不会产生内存空间碎片。"></a>空间整合：<br>  - 由于G1使用了独立区域（Region）概念，G1从整体来看是基于“标记-整理”算法实现收集，从局部（两个Region）上来看是基于“复制”算法实现的，但无论如何，这两种算法都意味着G1运作期间不会产生内存空间碎片。</h2>  CMS无法处理浮动垃圾：在最后一步并发清理过程中，用户线程执行也会产生垃圾，但是这部分垃圾是在标记之后，所以只有等到下一次gc的时候清理掉，这部分垃圾叫浮动垃圾，因为我边执行清除过程，应用也边产生垃圾。这时需要设置一个百分比来确保程序的可执行，避免CMS运行时，预留的内存无法满足程序的需要。在JDK1.5中，这个百分比为68%，到1.6时，这个参数值提高到了92%。那如果万一有些人说我就要把这个参数值设置100%，那执行的时候内存满了，用户的线程运行不了。这时候会临时启用serial<br>  Old （单线程执行，会暂停所有用户的线程）收集器来重新进行老年代的垃圾收集，这样停顿时间就更长了。</li>
+</ul>
+<h4 id="GO相比于java的优势"><a href="#GO相比于java的优势" class="headerlink" title="GO相比于java的优势"></a>GO相比于java的优势</h4><h4 id="go-zero框架关于缓存穿透的解决方案"><a href="#go-zero框架关于缓存穿透的解决方案" class="headerlink" title="go-zero框架关于缓存穿透的解决方案"></a>go-zero框架关于缓存穿透的解决方案</h4><h4 id="四次挥手的过程"><a href="#四次挥手的过程" class="headerlink" title="四次挥手的过程"></a>四次挥手的过程</h4><h4 id="最后一次挥手有一个time-wait，为什么"><a href="#最后一次挥手有一个time-wait，为什么" class="headerlink" title="最后一次挥手有一个time-wait，为什么"></a>最后一次挥手有一个time-wait，为什么</h4><ul>
+<li>确保最后一个确认报文能够到达（如果B没收到A发送来的确认报文，那么就会重新发送连接释放请求报文，A等待一段时间就是为了处理这种情况的发生）</li>
+<li>避免新旧链接混淆。（等待2MSL可以让本连接持续时间内所产生的所有报文都从网络中消失，使得下一个新的连接请求不会出现旧的连接请求报文）</li>
+</ul>
+<h4 id="说一说tcp的滑动窗口"><a href="#说一说tcp的滑动窗口" class="headerlink" title="说一说tcp的滑动窗口"></a>说一说tcp的滑动窗口</h4><p><code>概念：</code></p>
+<ol>
+<li>窗口大小指的是无需等待确认应答而可以继续发送数据的最大值。上图的窗口大小就是4000个字节（四个段）。</li>
+<li>发送前四个段的时候，不需要等待任何ACK，直接发送；</li>
+<li>收到第一个ACK后，滑动窗口向后移动，继续发送第五个段的数据；依次类推；</li>
+<li>操作系统内核为了维护这个滑动窗口，需要开辟 发送缓冲区 来记录当前还有哪些数据没有应答；只有确认应答过的数据，才能从缓冲区删掉；</li>
+<li>窗口越大，则网络的吞吐率就越高；<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/../images/%E7%99%BE%E5%A7%93%E7%BD%91-1702880519034.png" alt="5"></li>
+</ol>
+<h5 id="tcp的流量控制"><a href="#tcp的流量控制" class="headerlink" title="tcp的流量控制"></a>tcp的流量控制</h5><ul>
+<li>16位窗口大小<ol>
+<li>接收端将自己可以接收的缓冲区大小放入 TCP 首部中的 “窗口大小” 字段，通过ACK端通知发送端；</li>
+<li>窗口大小字段越大，说明网络的吞吐量越高；</li>
+<li>接收端一旦发现自己的缓冲区快满了，就会将窗口大小设置成一个更小的值通知给发送端；</li>
+<li>发送端接受到这个窗口之后，就会减慢自己的发送速度；</li>
+<li>如果接收端缓冲区满了，就会将窗口置为0；这时发送方不再发送数据，但是需要定期发送一个窗口探测数据段，使接收端把窗口大小告诉发送端。</li>
+</ol>
+</li>
+</ul>
+<h4 id="tcp的拥塞控制算法"><a href="#tcp的拥塞控制算法" class="headerlink" title="tcp的拥塞控制算法"></a>tcp的拥塞控制算法</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/../images/%E7%99%BE%E5%A7%93%E7%BD%91-1702881164372.png" alt="10"></p>
+<ol>
+<li>最初cwnd&#x3D;1，ssthresh&#x3D;16，执行慢开始算法，cwnd大小指数增长</li>
+<li>cwnd到达慢开始门限ssthresh后，转而执行拥塞避免算法，cwnd线性加一增长</li>
+<li>随着发送速率的增加，若发生超时重传，则将慢开始门限ssthresh减小为当前拥塞窗口的一半、再将拥塞窗口cwnd设置为1，然后执行慢开始-–拥塞避免，重复1、2</li>
+<li>若发送方收到3个重复确认，则表示分组丢失，发送方立刻重传相应分组；然后执行快恢复算法</li>
+<li>将慢开始门限ssthresh和拥塞窗口cwnd重新设置为当前拥塞窗口的一半，然后执行拥塞避免算法</li>
+</ol>
+<h4 id="有序数组，原地删除重复的元素最多剩下两个"><a href="#有序数组，原地删除重复的元素最多剩下两个" class="headerlink" title="有序数组，原地删除重复的元素最多剩下两个"></a>有序数组，原地删除重复的元素最多剩下两个</h4><ul>
+<li><p>双指针（好难）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">removeDuplicates</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        <span class="keyword">if</span> (n &lt;= <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> n;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">slow</span> <span class="operator">=</span> <span class="number">2</span>, fast = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">while</span> (fast &lt; n) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[slow - <span class="number">2</span>] != nums[fast]) &#123;</span><br><span class="line">                nums[slow] = nums[fast];</span><br><span class="line">                ++slow;</span><br><span class="line">            &#125;</span><br><span class="line">            ++fast;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> slow;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>计数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">removeDuplicates</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (nums.length &lt;= <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> nums.length;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">times</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>;i &lt; nums.length;++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] == nums[i-<span class="number">1</span>]) &#123;</span><br><span class="line">                times++;</span><br><span class="line">                <span class="keyword">if</span> (times &lt;= <span class="number">2</span>) &#123;</span><br><span class="line">                    nums[result++] = nums[i];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                times=<span class="number">1</span>;</span><br><span class="line">                nums[result++] = nums[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="chatgpt怎么看"><a href="#chatgpt怎么看" class="headerlink" title="chatgpt怎么看"></a>chatgpt怎么看</h4></article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://avatars.githubusercontent.com/u/106024593?v=4" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://avatars.githubusercontent.com/u/106024593?v=4" title="头像" alt="头像"></a><div class="post-copyright__author_name">xingxing</div><div class="post-copyright__author_desc">What does not kill me makes me stronger</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://www.staraway.asia/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://www.staraway.asia/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/')">百姓网面试</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="/img/weixin.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/weixin.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/zhifubao.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/zhifubao.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://www.staraway.asia/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=百姓网面试&amp;url=http://www.staraway.asia/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/&amp;pic=/img/jiuye.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">可转载哦</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E5%B0%B1%E4%B8%9A/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>就业<span class="tagsPageCount">8</span></a><a class="post-meta__box__tags" href="/tags/%E7%BC%93%E5%AD%98/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>缓存<span class="tagsPageCount">1</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="/img/jiuye.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2023/12/15/%E4%B8%87%E7%89%A9%E5%BF%83%E9%80%89%E4%B8%80%E9%9D%A2/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/jiuye.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">万物心选一面</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/2023/09/01/hexo-anzhiyu%E5%AD%A6%E4%B9%A0/" title="hexo-anzhiyu学习"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/houduan.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-09-01</div><div class="title">hexo-anzhiyu学习</div></div></a></div><div><a href="/2023/10/04/%E5%9B%9E%E6%BA%AF%E2%80%94%E2%80%94flood-fill%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/" title="回溯——排列、组合、子集"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/suanfa.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-10-04</div><div class="title">回溯——排列、组合、子集</div></div></a></div><div><a href="/2023/10/05/%E5%9B%9E%E6%BA%AF%E2%80%94%E2%80%94%E6%8E%92%E5%88%97%E3%80%81%E7%BB%84%E5%90%88%E3%80%81%E5%AD%90%E9%9B%86/" title="回溯——flood fill、字符串"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/suanfa.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-10-05</div><div class="title">回溯——flood fill、字符串</div></div></a></div><div><a href="/2023/12/06/dp%E6%80%BB%E7%BB%93%E7%AF%87/" title="dp总结篇————背包问题"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/suanfa.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-12-06</div><div class="title">dp总结篇————背包问题</div></div></a></div><div><a href="/2023/12/13/%E5%80%9F%E8%B4%B7%E5%AE%9D%E4%B8%80%E9%9D%A2%E5%87%89%E7%BB%8F/" title="借贷宝一面凉经"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/jiuye.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-12-13</div><div class="title">借贷宝一面凉经</div></div></a></div><div><a href="/2023/12/15/%E4%B8%87%E7%89%A9%E5%BF%83%E9%80%89%E4%B8%80%E9%9D%A2/" title="万物心选一面"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/jiuye.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-12-15</div><div class="title">万物心选一面</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://avatars.githubusercontent.com/u/106024593?v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description">专注于前端开发的后端工程师</div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">xingxing</h1><div class="author-info__desc">What does not kill me makes me stronger</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/away-star" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/425634456" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来看我的博客鸭~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#sql%E4%BC%98%E5%8C%96"><span class="toc-number">1.</span> <span class="toc-text">sql优化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%B7%A6%E5%89%8D%E7%BC%80%E5%8E%9F%E5%88%99"><span class="toc-number">2.</span> <span class="toc-text">最左前缀原则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E5%B7%A6%E5%89%8D%E7%BC%80%E5%8E%9F%E5%88%99%E5%8F%AF%E4%BB%A5%E4%BC%98%E5%8C%96sql%EF%BC%88%E7%B4%A2%E5%BC%95%E6%89%AB%E6%8F%8F%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">为什么最左前缀原则可以优化sql（索引扫描）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-number">4.</span> <span class="toc-text">索引失效的场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E7%BC%93%E5%AD%98%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%B8%80%E8%87%B4%E6%80%A7"><span class="toc-number">5.</span> <span class="toc-text">如何保证缓存和数据库的一致性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C%E5%9D%87%E4%BC%9A%E6%88%90%E5%8A%9F%E7%9A%84%E5%89%8D%E6%8F%90"><span class="toc-number">5.1.</span> <span class="toc-text">缓存和数据库的操作均会成功的前提</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C%E5%9D%87%E4%B8%8D%E4%BF%9D%E8%AF%81%E6%88%90%E5%8A%9F"><span class="toc-number">5.2.</span> <span class="toc-text">缓存和数据库的操作均不保证成功</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%BB%E4%BB%8E%E5%BA%93%E5%BB%B6%E8%BF%9F%E5%92%8C%E5%BB%B6%E8%BF%9F%E5%8F%8C%E5%88%A0%E9%97%AE%E9%A2%98"><span class="toc-number">5.3.</span> <span class="toc-text">主从库延迟和延迟双删问题</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB%E3%80%81%E4%B8%BB%E4%BB%8E%E9%9B%86%E7%BE%A4%E5%81%9A%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="toc-number">6.</span> <span class="toc-text">读写分离、主从集群做性能优化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E5%88%86%E8%A1%A8%E3%80%81%E5%9E%82%E7%9B%B4%E5%88%86%E8%A1%A8%E8%A6%81%E6%80%8E%E4%B9%88%E5%88%86"><span class="toc-number">7.</span> <span class="toc-text">水平分表、垂直分表要怎么分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%91%E5%85%8B%E7%89%8C%E7%BC%BA%E4%B8%80%E5%BC%A0%EF%BC%8C%E8%BF%85%E9%80%9F%E6%89%BE%E5%88%B0%E7%BC%BA%E7%9A%84%E6%98%AF%E5%93%AA%E5%BC%A0%EF%BC%88%E6%AF%8F%E4%B8%AA%E7%89%8C%E7%BC%96%E5%8F%B7%E7%9B%B8%E5%8A%A0%EF%BC%8C%E5%AE%9E%E9%99%85%E5%80%BC%E7%9B%B8%E5%87%8F%E5%BE%97%E5%88%B0%E4%B8%A2%E5%A4%B1%E7%9A%84%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">扑克牌缺一张，迅速找到缺的是哪张（每个牌编号相加，实际值相减得到丢失的）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E9%99%85%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84sql%E4%BC%98%E5%8C%96"><span class="toc-number">9.</span> <span class="toc-text">实际项目中的sql优化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%AF%E5%90%A6%E5%81%9A%E8%BF%87%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95"><span class="toc-number">10.</span> <span class="toc-text">是否做过性能测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Mysql%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E5%8F%AF%E9%87%8D%E5%A4%8D%E8%AF%BB%EF%BC%88MVCC-undo-log%E7%89%88%E6%9C%AC%E9%93%BE%EF%BC%89"><span class="toc-number">11.</span> <span class="toc-text">Mysql怎么实现可重复读（MVCC undo log版本链）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E5%B9%BB%E8%AF%BB"><span class="toc-number">12.</span> <span class="toc-text">mysql怎么解决幻读</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%AF%E5%90%A6%E4%BA%86%E8%A7%A3%E8%BF%87%E9%97%B4%E9%9A%99%E9%94%81"><span class="toc-number">13.</span> <span class="toc-text">是否了解过间隙锁</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#jdk17%E5%92%8Cjdk8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">14.</span> <span class="toc-text">jdk17和jdk8的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4synchronize%EF%BC%88%E9%94%81%E5%8D%87%E7%BA%A7%E6%9C%BA%E5%88%B6%EF%BC%89"><span class="toc-number">15.</span> <span class="toc-text">说说synchronize（锁升级机制）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4jvm%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B"><span class="toc-number">16.</span> <span class="toc-text">说说jvm内存模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CMS%E7%9A%84%E9%98%B6%E6%AE%B5%EF%BC%88%E5%92%8CG1%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%89"><span class="toc-number">17.</span> <span class="toc-text">CMS的阶段（和G1的区别）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#CMS%E8%BF%87%E7%A8%8B"><span class="toc-number">17.1.</span> <span class="toc-text">CMS过程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#G1%E8%BF%87%E7%A8%8B"><span class="toc-number">17.2.</span> <span class="toc-text">G1过程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#G1%E4%BC%98%E5%8A%BF"><span class="toc-number">17.3.</span> <span class="toc-text">G1优势</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E6%95%B4%E5%90%88%EF%BC%9A-%E7%94%B1%E4%BA%8EG1%E4%BD%BF%E7%94%A8%E4%BA%86%E7%8B%AC%E7%AB%8B%E5%8C%BA%E5%9F%9F%EF%BC%88Region%EF%BC%89%E6%A6%82%E5%BF%B5%EF%BC%8CG1%E4%BB%8E%E6%95%B4%E4%BD%93%E6%9D%A5%E7%9C%8B%E6%98%AF%E5%9F%BA%E4%BA%8E%E2%80%9C%E6%A0%87%E8%AE%B0-%E6%95%B4%E7%90%86%E2%80%9D%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E6%94%B6%E9%9B%86%EF%BC%8C%E4%BB%8E%E5%B1%80%E9%83%A8%EF%BC%88%E4%B8%A4%E4%B8%AARegion%EF%BC%89%E4%B8%8A%E6%9D%A5%E7%9C%8B%E6%98%AF%E5%9F%BA%E4%BA%8E%E2%80%9C%E5%A4%8D%E5%88%B6%E2%80%9D%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%8C%E4%BD%86%E6%97%A0%E8%AE%BA%E5%A6%82%E4%BD%95%EF%BC%8C%E8%BF%99%E4%B8%A4%E7%A7%8D%E7%AE%97%E6%B3%95%E9%83%BD%E6%84%8F%E5%91%B3%E7%9D%80G1%E8%BF%90%E4%BD%9C%E6%9C%9F%E9%97%B4%E4%B8%8D%E4%BC%9A%E4%BA%A7%E7%94%9F%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4%E7%A2%8E%E7%89%87%E3%80%82"><span class="toc-number"></span> <span class="toc-text">空间整合：  - 由于G1使用了独立区域（Region）概念，G1从整体来看是基于“标记-整理”算法实现收集，从局部（两个Region）上来看是基于“复制”算法实现的，但无论如何，这两种算法都意味着G1运作期间不会产生内存空间碎片。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#GO%E7%9B%B8%E6%AF%94%E4%BA%8Ejava%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="toc-number">1.</span> <span class="toc-text">GO相比于java的优势</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#go-zero%E6%A1%86%E6%9E%B6%E5%85%B3%E4%BA%8E%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">2.</span> <span class="toc-text">go-zero框架关于缓存穿透的解决方案</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">四次挥手的过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E6%8C%A5%E6%89%8B%E6%9C%89%E4%B8%80%E4%B8%AAtime-wait%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88"><span class="toc-number">4.</span> <span class="toc-text">最后一次挥手有一个time-wait，为什么</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E8%AF%B4tcp%E7%9A%84%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3"><span class="toc-number">5.</span> <span class="toc-text">说一说tcp的滑动窗口</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#tcp%E7%9A%84%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6"><span class="toc-number">5.1.</span> <span class="toc-text">tcp的流量控制</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tcp%E7%9A%84%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95"><span class="toc-number">6.</span> <span class="toc-text">tcp的拥塞控制算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%EF%BC%8C%E5%8E%9F%E5%9C%B0%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E7%9A%84%E5%85%83%E7%B4%A0%E6%9C%80%E5%A4%9A%E5%89%A9%E4%B8%8B%E4%B8%A4%E4%B8%AA"><span class="toc-number">7.</span> <span class="toc-text">有序数组，原地删除重复的元素最多剩下两个</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chatgpt%E6%80%8E%E4%B9%88%E7%9C%8B"><span class="toc-number">8.</span> <span class="toc-text">chatgpt怎么看</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/" title="百姓网面试"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/jiuye.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="百姓网面试"/></a><div class="content"><a class="title" href="/2023/12/18/%E7%99%BE%E5%A7%93%E7%BD%91/" title="百姓网面试">百姓网面试</a><time datetime="2023-12-18T00:22:26.000Z" title="发表于 2023-12-18 08:22:26">2023-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/15/%E4%B8%87%E7%89%A9%E5%BF%83%E9%80%89%E4%B8%80%E9%9D%A2/" title="万物心选一面"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/jiuye.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="万物心选一面"/></a><div class="content"><a class="title" href="/2023/12/15/%E4%B8%87%E7%89%A9%E5%BF%83%E9%80%89%E4%B8%80%E9%9D%A2/" title="万物心选一面">万物心选一面</a><time datetime="2023-12-15T00:55:20.000Z" title="发表于 2023-12-15 08:55:20">2023-12-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/13/%E8%BF%BD%E5%BD%A2%E7%A7%91%E6%8A%80%E4%B8%80%E9%9D%A2/" title="追形科技一面"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/jiuye.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="追形科技一面"/></a><div class="content"><a class="title" href="/2023/12/13/%E8%BF%BD%E5%BD%A2%E7%A7%91%E6%8A%80%E4%B8%80%E9%9D%A2/" title="追形科技一面">追形科技一面</a><time datetime="2023-12-13T12:19:18.000Z" title="发表于 2023-12-13 20:19:18">2023-12-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/13/%E5%80%9F%E8%B4%B7%E5%AE%9D%E4%B8%80%E9%9D%A2%E5%87%89%E7%BB%8F/" title="借贷宝一面凉经"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/jiuye.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="借贷宝一面凉经"/></a><div class="content"><a class="title" href="/2023/12/13/%E5%80%9F%E8%B4%B7%E5%AE%9D%E4%B8%80%E9%9D%A2%E5%87%89%E7%BB%8F/" title="借贷宝一面凉经">借贷宝一面凉经</a><time datetime="2023-12-13T06:53:09.000Z" title="发表于 2023-12-13 14:53:09">2023-12-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/07/redis%E5%B0%8F%E8%AE%B0/" title="redis小记"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/houduan.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="redis小记"/></a><div class="content"><a class="title" href="/2023/12/07/redis%E5%B0%8F%E8%AE%B0/" title="redis小记">redis小记</a><time datetime="2023-12-07T14:48:35.000Z" title="发表于 2023-12-07 22:48:35">2023-12-07</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By xingxing</div><div id="workboard"><img class="workSituationImg boardsign" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/aperture.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">22</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">5</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.staraway.asia" title="个人博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/touxiang.png" alt="个人博客"/><span class="back-menu-item-text">个人博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://github.com/away-star" title="Github"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/touxiang.png" alt="Github"/><span class="back-menu-item-text">Github</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/css/" style="font-size: 0.88rem;">css<sup>2</sup></a><a href="/tags/docker/" style="font-size: 0.88rem;">docker<sup>1</sup></a><a href="/tags/gateway/" style="font-size: 0.88rem;">gateway<sup>1</sup></a><a href="/tags/http/" style="font-size: 0.88rem;">http<sup>2</sup></a><a href="/tags/kafka/" style="font-size: 0.88rem;">kafka<sup>1</sup></a><a href="/tags/mysql/" style="font-size: 0.88rem;">mysql<sup>1</sup></a><a href="/tags/next-js/" style="font-size: 0.88rem;">next.js<sup>1</sup></a><a href="/tags/react/" style="font-size: 0.88rem;">react<sup>4</sup></a><a href="/tags/redis/" style="font-size: 0.88rem;">redis<sup>2</sup></a><a href="/tags/springboot/" style="font-size: 0.88rem;">springboot<sup>1</sup></a><a href="/tags/springcloud/" style="font-size: 0.88rem;">springcloud<sup>2</sup></a><a href="/tags/springsecurity/" style="font-size: 0.88rem;">springsecurity<sup>1</sup></a><a href="/tags/sql/" style="font-size: 0.88rem;">sql<sup>1</sup></a><a href="/tags/umi/" style="font-size: 0.88rem;">umi<sup>1</sup></a><a href="/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/" style="font-size: 0.88rem;">云原生<sup>1</sup></a><a href="/tags/%E5%88%B7%E9%A2%98/" style="font-size: 0.88rem;">刷题<sup>2</sup></a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 0.88rem;">前端<sup>2</sup></a><a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 0.88rem;">后端<sup>3</sup></a><a href="/tags/%E5%9B%9E%E6%BA%AF/" style="font-size: 0.88rem;">回溯<sup>2</sup></a><a href="/tags/%E5%B0%B1%E4%B8%9A/" style="font-size: 0.88rem;">就业<sup>8</sup></a><a href="/tags/%E7%BC%93%E5%AD%98/" style="font-size: 0.88rem;">缓存<sup>1</sup></a><a href="/tags/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" style="font-size: 0.88rem;">背包问题<sup>1</sup></a><a href="/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/" style="font-size: 0.88rem;">虚拟内存<sup>1</sup></a><a href="/tags/%E9%9D%A2%E7%BB%8F/" style="font-size: 0.88rem;">面经<sup>1</sup></a><a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 0.88rem;">面试<sup>2</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.4/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("09/01/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    "已上线",
+    dnum,
+    "天"
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by xingxing %c 你正在访问 xingxing 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("09/01/2023 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "/img/add-to-list.svg";
+        img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+        img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+      }
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "visitor@anheyu.com";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/click-show-text.min.js" data-mobile="false" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="true" async="async"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
